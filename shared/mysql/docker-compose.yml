@@ -1,0 +1,15 @@
+version: '2'
+services:
+  db:
+    build: .
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: youshallnotpass!
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: 123
+    ports:
+      - 3306:3306
+networks:
+  default:
+    external:
+      name: nginx-proxy
