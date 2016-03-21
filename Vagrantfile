@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/wily/current/wily-server-cloudimg-amd64-vagrant-disk1.box"
-  config.vm.box = "base"
+  config.vm.box = "vagary-docker"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -21,7 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine.
   config.vm.network "forwarded_port", guest: 3306, host: 3306
-  config.vm.network "forwarded_port", guest: 6863, host: 22
+  # config.vm.network "forwarded_port", guest: 6863, host: 22
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
