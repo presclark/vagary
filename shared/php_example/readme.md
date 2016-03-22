@@ -2,7 +2,9 @@ This is just a super simple example of how to get a php site up and running in
 a docker container.
 
 Before gettign started, the mysql and reverse proxy containers should be
-running. To run this container:
+running.
+
+To run this container:
 
 ```bash
 docker-compose up
