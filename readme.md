@@ -45,7 +45,7 @@ stuff together (see its readme for more info). To run it, cd to its directory an
 docker-compose up
 ```
 
-Note that to visit the site, you'll need to update your hosts host file:
+Note that to visit the site, you'll need to update your host's host file:
 
 ```bash
 # From your host computer (i.e., not inside vagrant)
