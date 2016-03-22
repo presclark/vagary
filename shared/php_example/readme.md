@@ -19,4 +19,4 @@ sudo nano /etc/hosts
 192.168.168.168 sample.dev
 ```
 
-You shouln now be able to visit http://sample.dev from your browser!
+You should now be able to visit http://sample.dev from your browser!
