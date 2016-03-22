@@ -1,0 +1,17 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: php -S 0.0.0.0:8000 -t code/app/
+    ports:
+      - "8000"
+    volumes:
+      - .:/code
+    external_links:
+      - "mysql"
+    environment:
+      VIRTUAL_HOST: sample.dev
+networks:
+  default:
+    external:
+      name: nginx-proxy
