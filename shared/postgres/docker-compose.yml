@@ -1,0 +1,14 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.5
+    container_name: postgres
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: 123
+    ports:
+      - 5432:5432
+networks:
+  default:
+    external:
+      name: nginx-proxy
