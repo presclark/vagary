@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd /var/shared/mysql
+cd /var/shared/postgres
 docker-compose up -d
 
 cd /var/shared/nginx-proxy

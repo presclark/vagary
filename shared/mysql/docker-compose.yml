@@ -1,7 +1,16 @@
 version: '2'
 services:
+  web:
+    image: dehy/adminer
+    container_name: adminer
+    environment:
+      VIRTUAL_HOST: adminer.dev
+    links:
+        - "db"
+    ports:
+      - "80"
   db:
-    build: .
+    image: mysql:5.7
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: youshallnotpass!
